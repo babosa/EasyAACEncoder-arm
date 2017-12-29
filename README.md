@@ -40,12 +40,25 @@ EasyAACEncoder目前支持的音视频格式：
 		Rate40kBits=5	/**< 40k bits per second (5 bits per ADPCM sample) */
 	};
 
+## 技术支持 ##
+
+- 邮件：[support@easydarwin.org](mailto:support@easydarwin.org) 
+
+- Tel：13718530929
+
+- QQ交流群：[538316953](https://jq.qq.com/?_wv=1027&k=5gM0Fex "RTSP/音视频/流媒体技术")
+
+> EasyAACEncoder-arm是一款非常稳定、高效的音频转码组件，各平台版本需要经过授权才能商业使用，商业授权方案可以通过以上渠道进行更深入的技术与合作咨询；
+
+
 ## 获取更多信息 ##
 
-邮件：[support@easydarwin.org](mailto:support@easydarwin.org) 
+**EasyDarwin**开源流媒体服务器：[www.EasyDarwin.org](http://www.easydarwin.org)
 
-WEB：[www.EasyDarwin.org](http://www.easydarwin.org)
+**EasyDSS**商用流媒体解决方案：[www.EasyDSS.com](http://www.easydss.com)
 
-Copyright &copy; EasyDarwin.org 2012-2017
+**EasyNVR**无插件直播方案：[www.EasyNVR.com](http://www.easynvr.com)
+
+Copyright &copy; EasyDarwin Team 2012-2017
 
 ![EasyDarwin](http://www.easydarwin.org/skin/easydarwin/images/wx_qrcode.jpg)
