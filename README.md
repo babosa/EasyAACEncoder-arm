@@ -44,8 +44,6 @@ EasyAACEncoder目前支持的音视频格式：
 
 - 邮件：[support@easydarwin.org](mailto:support@easydarwin.org) 
 
-- Tel：13718530929
-
 - QQ交流群：<a href="https://jq.qq.com/?_wv=1027&k=5gM0Fex" title="EasyAACEncoder-arm" target="_blank">**538316953**</a>
 
 > EasyAACEncoder-arm是一款非常稳定、高效的音频转码组件，各平台版本需要经过授权才能商业使用，商业授权方案可以通过以上渠道进行更深入的技术与合作咨询；
