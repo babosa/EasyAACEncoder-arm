@@ -16,7 +16,7 @@
 - **ARM版本目前已经定制了hisiv100、hisiv200、hisiv300、hisiv400多个平台，如需其他ARM平台版本，请发送邮件support@easydarwin.org，附上对应ARM平台的交叉编译工具链，我们为您定制开发对应版本的EasyAACEncoder-arm转码库！**；
 
 ## 调用过程 ##
-![](http://www.easydarwin.org/skin/easydarwin/images/easyaacencoder20160103.png)
+![](http://www.easydarwin.org/skin/easydarwin/images/easyaacencoder20180822.png)
 
 
 ## 特殊说明 ##
