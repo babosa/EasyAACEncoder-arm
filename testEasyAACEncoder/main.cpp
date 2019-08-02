@@ -41,13 +41,6 @@ int TestG711ToAAC_standard()
     initParam.ucAudioCodec = Law_ALaw;
     //initParam.ucAudioCodec = Law_ULaw;
 
-    active = Easy_AACEncoder_activate(EASYAACENCODER_KEY);
-    if(active != EASY_ACTIVATE_SUCCESS)
-    {
-        printf("%s:[%d] Easy_AACEncoder_activate failed! ret=%d\n",__FUNCTION__,__LINE__,active);
-        return -1;
-    }
-
     Easy_Handle handle = Easy_AACEncoder_Init(initParam);
     char* infilename = "g711.g711a";  //标准
     char* outAacname = "g711.aac";
@@ -180,13 +173,6 @@ int TestPcmToAAC()
 	//initParam.g726param.ucRateBits=Rate24kBits;
 	//initParam.g726param.ucRateBits=Rate32kBits;	
 	//initParam.g726param.ucRateBits=Rate40kBits;	
-
-    active = Easy_AACEncoder_activate(EASYAACENCODER_KEY);
-    if(active != EASY_ACTIVATE_SUCCESS)
-    {
-        printf("%s:[%d] Easy_AACEncoder_activate failed! ret=%d\n",__FUNCTION__,__LINE__,active);
-        return -1;
-    }
 
 	Easy_Handle handle = Easy_AACEncoder_Init(initParam);
 	//char* infilename = "encode_out_16.g726"; 
