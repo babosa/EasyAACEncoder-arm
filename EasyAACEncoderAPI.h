@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2013-2016 EasyDarwin.ORG.  All rights reserved.
+	Copyright (c) 2013-2019 EasyDarwin.ORG.  All rights reserved.
 	Github: https://github.com/EasyDarwin
 	WEChat: EasyDarwin
 	Website: http://www.easydarwin.org
@@ -7,8 +7,6 @@
 
 #ifndef EasyAACEncoder_API_H
 #define	EasyAACEncoder_API_H
-
-#include "EasyTypes.h"
 
 #ifdef _WIN32
 #define Easy_API  __declspec(dllexport)
@@ -18,7 +16,7 @@
 #define Easy_APICALL 
 #endif
 
-#define EasyAACEncoder_Handle void*
+#define Easy_Handle void*
 
 ///* Audio Codec */
 enum Law
@@ -66,17 +64,14 @@ typedef struct _initParam
 extern "C"
 {
 #endif
-	/* Active EasyAACEncoder library */
-	Easy_API int Easy_APICALL Easy_AACEncoder_activate(char *license);
-
 	/* Create AAC Encoder Handle */
-	Easy_API EasyAACEncoder_Handle Easy_APICALL Easy_AACEncoder_Init(InitParam initPar);
+	Easy_API Easy_Handle Easy_APICALL Easy_AACEncoder_Init(InitParam initPar);
 
 	/* Input original data, output the encoede AAC data */
-	Easy_API int Easy_APICALL Easy_AACEncoder_Encode(EasyAACEncoder_Handle handle, unsigned char* inbuf, unsigned int inlen, unsigned char* outbuf, unsigned int* outlen);
+	Easy_API int Easy_APICALL Easy_AACEncoder_Encode(Easy_Handle handle, unsigned char* inbuf, unsigned int inlen, unsigned char* outbuf, unsigned int* outlen);
 
 	/* Close Encoder Handle */
-	Easy_API void Easy_APICALL Easy_AACEncoder_Release(EasyAACEncoder_Handle handle);
+	Easy_API void Easy_APICALL Easy_AACEncoder_Release(Easy_Handle handle);
 
 #ifdef __cplusplus
 }

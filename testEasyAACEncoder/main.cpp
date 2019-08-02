@@ -9,7 +9,6 @@
 #include "EasyAACEncoderAPI.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "EasyTypes.h"
 
 using namespace std;
 
@@ -17,9 +16,6 @@ using namespace std;
 #define TEST_G711A_FILE       "g711.g711a"  //标准
 
 #define TEST_AAC_FILE         "dest.aac"
-
-#define EASYAACENCODER_KEY "75587732645A4F576B596F41747339627044424A532B31305A584E305A57467A65574668593256755932396B5A584C78567778576F50394C3430566863336C4559584A33615735555A57467453584E55614756435A584E30514449774D54686C59584E35"
-
 
 int TestG711ToAAC_private();
 int TestG711ToAAC_standard();
@@ -52,7 +48,7 @@ int TestG711ToAAC_standard()
         return -1;
     }
 
-    EasyAACEncoder_Handle handle = Easy_AACEncoder_Init( initParam);
+    Easy_Handle handle = Easy_AACEncoder_Init(initParam);
     char* infilename = "g711.g711a";  //标准
     char* outAacname = "g711.aac";
 
@@ -117,14 +113,7 @@ int TestG726ToAAC()
     //initParam.g726param.ucRateBits=Rate32kBits;	
     initParam.g726param.ucRateBits=Rate40kBits;	
 
-    active = Easy_AACEncoder_activate(EASYAACENCODER_KEY);
-    if(active != EASY_ACTIVATE_SUCCESS)
-    {
-        printf("%s:[%d] Easy_AACEncoder_activate failed! ret=%d\n",__FUNCTION__,__LINE__,active);
-        return -1;
-    }
-
-    EasyAACEncoder_Handle handle = Easy_AACEncoder_Init(initParam);
+    Easy_Handle handle = Easy_AACEncoder_Init(initParam);
     //char* infilename = "encode_out_16.g726"; 
     //char* outAacname = "encode_out_16.aac";
     //char* infilename = "encode_out_24.g726"; 
@@ -199,7 +188,7 @@ int TestPcmToAAC()
         return -1;
     }
 
-	EasyAACEncoder_Handle handle = Easy_AACEncoder_Init(initParam);
+	Easy_Handle handle = Easy_AACEncoder_Init(initParam);
 	//char* infilename = "encode_out_16.g726"; 
 	//char* outAacname = "encode_out_16.aac";
 	//char* infilename = "encode_out_24.g726"; 
