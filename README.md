@@ -1,6 +1,6 @@
 ## EasyAACEncoder-arm ##
 
-**EasyAACEncoder-arm** 是EasyDarwin流媒体团队开发与维护的一款商用音频转码到AAC的工具库，目前支持G711a/G711u/G726/PCM等音频格式的转码，跨平台，支持Windows（32&64）/Linux（32&64）/ARM各平台，相比于其他普通类型的音频转码库，效率有极大提升；
+**EasyAACEncoder-arm** 是EasyDarwin流媒体团队开发与维护的一款免费的音频转码到AAC的工具库，目前支持G711a/G711u/G726/PCM等音频格式的转码，跨平台，支持Windows（32&64）/Linux（32&64）/ARM各平台，相比于其他普通类型的音频转码库，效率有极大提升；
 
 > 我们发现在类似于hisi海思芯片的大部分ARM系统中，对浮点运算的支持都不是很好，效率非常低，导致在ARM设备中直接将PCM类型音频转成AAC时，效率非常低，于是我们根据特定的ARM平台定制整理出了一套商用版本的音频转码EasyAACEncoder SDK，目前海思（hisiv100、hisiv200、hisiv300、hisiv400、hisiv500、hisiv600）全系列均已支持，CPU占用率极低，能非常好地满足ARM平台的AAC音频转码需求！
 
